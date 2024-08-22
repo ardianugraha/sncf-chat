@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.chat-container {
+    width: 400px;
+    height: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.chat-header {
+    background-color: #0055a4;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.sncf-logo {
+    height: 30px; /* Adjust this value as needed */
+    margin-right: 10px;
+}
+
+.chat-header h1 {
+    margin: 0;
+    font-size: 1.2em; /* Adjust this value as needed */
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.chat-input button {
+    padding: 5px 10px;
+    background-color: #0055a4;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 70%;
+}
+
+.user-message {
+    background-color: #e1f5fe;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.bot-message {
+    background-color: #f0f0f0;
+    align-self: flex-start;
+}
